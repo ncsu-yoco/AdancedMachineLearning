@@ -13,8 +13,8 @@ frmla = as.formula(
 # kernel <- rbfdot, polydot, vanilladot, tanhdot, laplacedot, besseldot,
 #         anovadot
 
+# create test and training set
 train_test_sets <- function(data, n = 2) {
-  # create test and training set
   index <- sample(1:dim(data)[1])
   datatrain <- data[index[1:floor(dim(data)[1]*(1/n))], ]
   datatest <- data[index[((ceiling(dim(data)[1]*(1/n))) + 1):dim(data)[1]], ]
