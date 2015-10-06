@@ -30,7 +30,7 @@ runSVM <- function(curr_kernel) {
   cat ("\n---------------------------------------\n")
   modelSVM <- ksvm(x = frmla, data = dataset, kernel = curr_kernel, fit = TRUE)
   predictions <- predict(modelSVM, dataset[,1:41])
-  #print (summary(predictions))
+  #print (summary(predictions)) 
   #print (summary(dataset[,42]))
   cat ("Confusion Matrix : ")
   print (table (predictions,dataset[,42]) )
@@ -48,4 +48,6 @@ train_test_sets(dataset, n= 4)
 train_test_sets(dataset, n= 5)
 train_test_sets(dataset, n= 6)
 
-#lapply(all_kernel, runSVM)
+#lapply
+
+#rm(list=ls())
