@@ -3,4 +3,5 @@
 *.DS_Store
 *.Rhistory
 *.RData
-
+*.pages
+*.pdf
